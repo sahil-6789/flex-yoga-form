@@ -12,12 +12,12 @@ const cors = require('cors');
 
 
 app.options('*',cors({
-  origin:'https://658185b97b7a6f008693f294--joyful-croquembouche-549e4e.netlify.app/',
+  origin:'https://flex-frontend.onrender.com',
   credentials:true,
 }));
 
 app.use(cors({
-  origin:'https://658185b97b7a6f008693f294--joyful-croquembouche-549e4e.netlify.app/',
+  origin:'https://flex-frontend.onrender.com',
   credentials:true,
 }));
 // middleware

@@ -1,7 +1,7 @@
 .dashboardContainer {
   display: flex;
   flex-direction: column;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyxxX_uSNB9iTdalUynEGuWrnRBMBpRzuOg&usqp=CAU") center/cover no-repeat;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6jcuf98Bwv-w-dB_fKZ7Fdo741ynrffJiGg&usqp=CAU") center/cover no-repeat;
   align-items: center;
   padding: 0;
   min-height: 100vh; /* Make sure the container spans the full viewport height */

@@ -10,7 +10,8 @@ const cookieParser = require('cookie-parser')
 const app = express();
 const cors = require('cors');
 const corsOptions ={
-    origin:'http://localhost:3000', 
+    // origin:'http://localhost:3000', 
+    origin:'https://658185b97b7a6f008693f294--joyful-croquembouche-549e4e.netlify.app/',
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }

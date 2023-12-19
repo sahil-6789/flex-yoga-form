@@ -49,7 +49,7 @@ function Dashboard() {
         setUser(data);
       });
     }
-  }, [user]);
+  }, [user,setUser]);
 
   if (!user) {
     // Render loading state or redirect to login if user data is not available

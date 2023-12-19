@@ -7,8 +7,8 @@ import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
 import { UserContextProvider } from './context/userContext';
 import Dashboard from './Dashboard';
-
-axios.defaults.baseURL = 'http://localhost:5000'
+axios.defaults.baseURL = 'https://flexmoney-backend-m3up.onrender.com/'
+// axios.defaults.baseURL = 'http://localhost:5000'
 axios.defaults.withCredentials = true
 
 function App() {

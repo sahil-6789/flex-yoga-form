@@ -81,7 +81,7 @@ function Dashboard() {
         <button className={styles.slotChange} onClick={handleSlotChange}>Change Slot</button>
       </div>
       <div>
-        <button className={styles.logoutbutton} onClick={handleLogout}>Logout</button>
+        <button style={{'background-color':'red'}} onClick={handleLogout}>Logout</button>
       </div>
     </div>
   );

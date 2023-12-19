@@ -3,7 +3,7 @@
   height: 100vh; /* Ensure the container covers the full height */
   display: flex;
   /* justify-content: center; */
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HmLgl6EdIs0brrL5eNLsh6IQkFv6gp0dIg&usqp=CAU");
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HmLgl6EdIs0brrL5eNLsh6IQkFv6gp0dIg&usqp=CAU"); */
   align-items: center;
   margin: 0;
 }
@@ -14,9 +14,9 @@
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HmLgl6EdIs0brrL5eNLsh6IQkFv6gp0dIg&usqp=CAU");
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HmLgl6EdIs0brrL5eNLsh6IQkFv6gp0dIg&usqp=CAU"); */
   /* Replace 'path-to-your-hd-yoga-image.jpg' with the actual path to your HD yoga image */
-  background-color: #3498db;
+  background-color: #41abf1;
   margin-top: 30px;
   color: #ffffff; /* Light text color for better readability on dark background */
 }

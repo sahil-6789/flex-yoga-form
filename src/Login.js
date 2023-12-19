@@ -1,4 +1,3 @@
-// src/components/Login.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -53,6 +52,7 @@ const Login = () => {
   };
 
   return (
+    <div className="main-container">
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
@@ -81,6 +81,7 @@ const Login = () => {
       <p>
         Don't have an account? <Link to="/register">Register here</Link>.
       </p>
+    </div>
     </div>
   );
 };

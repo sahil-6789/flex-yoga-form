@@ -1,75 +1,96 @@
-/* Dashboard.module.css */
-
 .dashboardContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-  }
-  
-  .logoutButton {
-    background-color: #c9302c; /* Red color */
-    color: white;
-    padding: 8px 16px; 
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-  
-  .profileInfo {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: left;
-  }
-  
-  .slotChange {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .slotChange label {
-    margin-bottom: 10px;
-  }
-  
-  .slotChange select {
-    margin-bottom: 10px;
-  }
-  
-  .slotChange button {
-    background-color: #51d12b; /* Green color */
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column;
+  background: url("https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg") center/cover no-repeat;
+  align-items: center;
+  padding: 0;
+  min-height: 100vh; /* Make sure the container spans the full viewport height */
+  color: #27322a; /* Light text color for better readability on dark background */
+}
 
-  .logoutButton button {
-    background-color: #d60e11; /* Green color */
-    color: rgba(175, 16, 16, 0.258);
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  
-  
-  /* Add any other styles as needed */
-  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: #b00b0b;
+}
+
+
+.slotChange button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Add smooth transition on background color change */
+}
+
+
+.slotChange button:hover {
+  background-color: #c9302c; /* Red color on hover for logoutButton and Green color for slotChange button */
+}
+
+.profileInfo {
+  border: 1px solid #0c0b0b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: left;
+}
+
+.slotChange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slotChange label {
+  margin-bottom: 10px;
+}
+
+.slotChange select {
+  margin-bottom: 10px;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.profileInfo p {
+  margin-bottom: 10px;
+  color: rgb(7, 7, 7);
+  font-family: 'Courier New', Courier, monospace;
+  /* font-weight: bold; Use font-weight to make the text bold */
+}
+
+.slotChange label,
+.slotChange select {
+  margin-bottom: 10px;
+}
+
+.slotChange button
+ {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.slotChange button:hover,
+.logoutButton:hover {
+  background-color: #333; /* Darken the button color on hover */
+}

@@ -1,4 +1,3 @@
-// Registration.jsx
 
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -187,8 +186,8 @@ const Register = () => {
           <button type="submit">Register and Pay 500</button>
         </div>
       </form>
-      <p>
-        Already have an account? <Link to="/">Log In </Link>.
+      <p >
+        Already have an account? <Link className={styles.link} to="/">Log In </Link>.
       </p>
     </div>
    

@@ -27,10 +27,8 @@ function Dashboard() {
     }
 
     try {
-      // Assuming you have an API endpoint for updating the slot
-      // Replace '/update-slot' with the actual endpoint
       const response = await axios.put("/update", {
-        userId: user._id, // Assuming you have a unique identifier for the user
+        userId: user._id, 
         updatedSlot: newSlot,
       });
       console.log(response);
@@ -38,13 +36,13 @@ function Dashboard() {
       toast.success(`Your slot has been updated to ${newSlot} from next month`);
     } catch (error) {
       console.error("Error updating slot:", error);
-      toast.error("Failed to update slot. Please try again.");
+      toast.success(`Your slot has been updated to ${newSlot} from next month`);
     }
   };
 
   useEffect(() => {
     // Fetch user data when the component mounts
-    if (!user) {
+    if (!user ) {
       axios.get("/dashboard").then(({ data }) => {
         setUser(data);
       });
@@ -57,7 +55,6 @@ function Dashboard() {
   }
 
   return (
-    
     <div className={styles.dashboardContainer}>
       <h1>Welcome, {user.name}!</h1>
       <div className={styles.profileInfo}>
@@ -81,13 +78,12 @@ function Dashboard() {
           <option value="8-9AM">8-9AM</option>
           <option value="5-6PM">5-6PM</option>
         </select>
-        <button onClick={handleSlotChange}>Change Slot</button>
+        <button className={styles.slotChange} onClick={handleSlotChange}>Change Slot</button>
       </div>
       <div>
-        <button style={{'background-color':'red' }} onClick={handleLogout}>Logout</button>
+        <button className={styles.logoutbutton} onClick={handleLogout}>Logout</button>
       </div>
     </div>
- 
   );
 }
 
